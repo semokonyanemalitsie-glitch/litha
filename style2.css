@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+header {
+  background: #004b3d;
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+.navbar { display: flex;
+  gap: 1em;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a.active {
+  text-decoration: underline;
+}
+
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) { .navbar {
+    display: none;
+    flex-direction: column;
+    background: #004b3d;
+    width: 100%;
+    text-align: center;
+  }
+
+  #menu-toggle:checked + .menu-icon + .navbar {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+
+.hero {
+  background: #e0f2f1;
+  text-align: center;
+  padding: 3em 1em;
+}.hero h2 {
+  color: #004b3d;
+  font-size: 2em;
+}
+
+.hero p {
+  margin: 1em 0;
+}
+
+.btn {
+  background: #004b3d;
+  color: #fff;
+  padding: 0.8em 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 2em;
+  gap: 1.5em;
+}
+.services-list {
+  list-style: none;
+  padding: 2em;
+}
+
+.services-list li {
+  background: #e0f2f1;
+  padding: 1em;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background: #004b3d;
+  color: #fff;
+  padding: 0.8em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.company-info {
+  text-align: center;
+  padding: 2em;
+}
+
+
+footer {
+  background: #004b3d;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+
+
+
+
+
+
+
+
